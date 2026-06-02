@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Gauri's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav__logo">GK<span class="nav__logo-dot">.</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home"      class="nav__link" data-text="Home">Home</a></li>
+      <li><a href="#about"     class="nav__link" data-text="About">About</a></li>
+      <li><a href="#portfolio" class="nav__link" data-text="Work">Work</a></li>
+      <li><a href="#services"  class="nav__link" data-text="Services">Services</a></li>
+      <li><a href="#contact"   class="nav__link nav__cta">Let's Talk</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <!-- Cinematic grain overlay -->
+    <div class="grain"></div>
+    <!-- Atmospheric orbs -->
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+
+    <div class="hero__inner">
+      <div class="hero__left">
+        <div class="hero__eyebrow">
+          <span class="eyebrow__line"></span>
+          <span>Gauri's Portfolio 2026</span>
+        </div>
+        <h1 class="hero__name">
+          <span class="hero__name-line" data-scroll="0.02">Hello,</span>
+          <span class="hero__name-line hero__name-line--em" data-scroll="0.04">I'm Gauri.</span>
+        </h1>
+        <p class="hero__role">Software Developer|Data Analyst & ML Engineer Students</p>
+        <p class="hero__desc">Designing care with intelligence — where hospitals heal through code.</p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn btn--light">View My Work</a>
+          <a href="#contact"   class="btn btn--outline">Contact Me</a>
+        </div>
+      </div>
+     <div class="hero__right">
+  <div class="hero__frame">
+    <div class="hero__frame-inner">
+      <div class="hero__portrait">
+        <!-- SVG artistic portrait with full photo -->
+        <svg viewBox="0 0 420 540" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="pg" cx="50%" cy="40%" r="55%">
+              <stop offset="0%" stop-color="#c084fc" stop-opacity="0.4"/>
+              <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#0a0010" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#e9d5ff" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          
+          <!-- Background Glow -->
+          <ellipse cx="210" cy="270" rx="160" ry="210" fill="url(#pg)"/>
+          <ellipse cx="210" cy="270" rx="200" ry="250" fill="url(#glow)"/>
+
+          <!-- The Full Photo -->
+          <!-- Note: Replace the href below with your own photo URL if needed -->
+          <image 
+            href="C:\Users\piyus\OneDrive\Desktop\gauri's new\file_000000002e1c7206b13a0f22cdfbbd73.png" 
+            x="40" y="60" 
+            width="340" height="440" 
+            preserveAspectRatio="xMidYMid slice"
+          />
+
+          <!-- Decorative rings -->
+          <circle cx="210" cy="270" r="180" fill="none" stroke="#c084fc" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="210" cy="270" r="150" fill="none" stroke="#a855f7" stroke-width="0.3" opacity="0.2"/>
+          
+          <!-- Grid lines for cinematic effect -->
+          <line x1="0" y1="270" x2="420" y2="270" stroke="#c084fc" stroke-width="0.3" opacity="0.15"/>
+          <line x1="210" y1="0" x2="210" y2="540" stroke="#c084fc" stroke-width="0.3" opacity="0.15"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero__frame-tag">✦ Software Developer</div>
+  </div>
+</div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-track"><div class="hero__scroll-thumb"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+
+    <!-- Cinematic horizontal rule -->
+    <div class="hero__reel">
+      <div class="reel__strip">
+        <span>Data Analysis</span><span class="reel__dot">◆</span>
+        <span>AI & Machine Learning</span><span class="reel__dot">◆</span>
+        <span>Web Development</span><span class="reel__dot">◆</span>
+        <span>Python</span><span class="reel__dot">◆</span>
+        <span>Web Design</span><span class="reel__dot">◆</span>
+        <span>Data Analysis</span><span class="reel__dot">◆</span>
+        <span>AI & Machine Learning</span><span class="reel__dot">◆</span>
+        <span>Web Development</span><span class="reel__dot">◆</span>
+        <span>Python</span><span class="reel__dot">◆</span>
+        <span>Web Design</span><span class="reel__dot">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="grain grain--light"></div>
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__left reveal">
+          <div class="about__counter-grid">
+            <div class="counter-card">
+              <span class="counter-card__num">02</span>
+              <span class="counter-card__label">Years of craft</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-card__num">2<sup>+</sup></span>
+              <span class="counter-card__label">Projects shipped</span>
+            </div>
+            <div class="counter-card counter-card--accent">
+              <span class="counter-card__quote">"Learning is how we grow."</span>
+              <span class="counter-card__attr">— Student</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__right reveal reveal--right">
+          <p class="section__label">About Me</p>
+          <h2 class="section__title">I am <em>Gauri Kulkarni</em></h2>
+          <p class="about__body">I’m Gauri Kulkarni, a Bachelor of Computer Applications (BCA) student with a strong passion for Artificial Intelligence development and Machine Learning. I enjoy exploring how intelligent systems can solve complex problems and create innovative solutions.</p>
+          <p class="about__body">My academic journey fuels my curiosity to build projects that combine smart algorithms, clean design, and practical functionality. I’m driven by the challenge of turning ideas into real-world applications that make technology more accessible and impactful.</p>
+          <p class="about__body">With every step, I aim to grow as a developer who blends technical expertise with creative problem-solving, contributing to the future of AI-powered solutions.</p>
+          <div class="skill-list">
+            <span class="skill-pill">Data Analysis</span>
+            <span class="skill-pill">AI & Machine Learning</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Web Development</span>
+            <span class="skill-pill">Web Design</span>
+          </div>
+          <a href="#contact" class="btn btn--dark" style="margin-top:2.5rem">Begin a project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="portfolio__header reveal">
+        <p class="section__label">Selected Work</p>
+        <h2 class="section__title">Recent <em>projects</em></h2>
+      </div>
+      <div class="portfolio__grid">
+
+        <p class="portfolio__item reveal" style="--i:0">
+          <img src="https://via.placeholder.com/400x300" alt="Project 1"/>
+          <div class="portfolio__overlay">
+            <h3 class="portfolio__title">future project</h3>
+            <p class="portfolio__desc">I am on stand-by</p>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="grain"></div>
+    <div class="container">
+      <div class="services__header reveal">
+        <p class="section__label">Selected Work</p>
+        <h2 class="section__title">Projects that<br> <em>Hit</em></h2>
+      </div>
+      <div class="services__list">
+        <div class="service reveal" style="--i:0">
+          <div class="service__head">
+            <span class="service__num">01</span>
+            <h3 class="service__title">Web Development</h3>
+            <span class="service__arrow">↗</span>
+          </div>
+          <p class="service__desc">Clean, performant, responsive websites and web apps crafted with HTML, CSS, JS, and modern frameworks.</p>
+          <div class="service__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="service reveal" style="--i:1">
+          <div class="service__head">
+            <span class="service__num">02</span>
+            <h3 class="service__title">AI & Machine Learning</h3>
+            <span class="service__arrow">↗</span>
+          </div>
+          <p class="service__desc">Artificial Intelligence (AI) is the broader field of creating machines that can perform tasks requiring human-like intelligence, while Machine Learning (ML) is a subset of AI that focuses on teaching computers to learn patterns from data and improve automatically without explicit programming. In short: AI is the goal, ML is one of the main ways to achieve it.</p>
+          <div class="service__tags"><span>Python </span><span>JavaScript</span><span>TensorFlow</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="orb orb--contact"></div>
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__left reveal">
+          <p class="section__label">Get in touch</p>
+          <h2 class="section__title contact__headline">Let's create<br><em>something<br>beautiful.</em></h2>
+          <a href="mailto:kulkarnigauri1515@gmail.com" class="contact__email">kulkarnigauri1515@gmail.com</a>
+          <p class="contact__location">📍 Jalgaon, Maharashtra</p>
+          <div class="contact__socials">
+            <a href="#" class="soc-link">LinkedIn</a>
+            <a href="#" class="soc-link">Instagram</a>
+          </div>
+        </div>
+        <div class="contact__right reveal reveal--right">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__field">
+                <input type="text" id="name" name="name" placeholder="Your name" required/>
+                <label for="name">Name</label>
+              </div>
+              <div class="form__field">
+                <input type="email" id="email" name="email" placeholder="Email address" required/>
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="form__field">
+              <input type="text" id="subject" name="subject" placeholder="Project type"/>
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form__field">
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn--light btn--full">Send message ✦</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="nav__logo">GK<span class="nav__logo-dot">.</span></a>
+      <p class="footer__copy">© 2026 Gauri. All rights reserved.</p>
+      <nav class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
