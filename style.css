@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════
-   CINEMATIC PORTFOLIO — Emma
+   CINEMATIC PORTFOLIO — Gauri
    Palette: deep black, rich purple, ivory
 ═══════════════════════════════════════ */
 
@@ -922,8 +922,29 @@ ul { list-style: none; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 960px) {
-  .hero__inner { grid-template-columns: 1fr; padding-top: 10rem; }
-  .hero__right { display: none; }
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    gap: 3rem;
+  }
+  .hero__left {
+    order: 1;
+  }
+  .hero__right {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__frame {
+    width: clamp(220px, 60vw, 340px);
+  }
+  .hero__eyebrow { justify-content: center; }
+  .hero__desc { margin-left: auto; margin-right: auto; }
+  .hero__actions { justify-content: center; }
   .about__inner { grid-template-columns: 1fr; gap: 3.5rem; }
   .portfolio__grid { grid-template-columns: 1fr 1fr; }
   .project--wide { grid-column: span 2; }
